@@ -1,0 +1,80 @@
+.wishcard{
+    width: 100px;
+    height: 400px;
+    background-color: white;
+    z-index: 20;
+    opacity: 0;
+    display: block;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(100%);
+      opacity: 20%;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+    }
+}
+
+#wishcard-0{
+    position: fixed;
+    top: 150px;
+    left: 220px;
+}
+
+#wishcard-1{
+    position: fixed;
+    top: 150px;
+    left: 330px;
+}
+
+#wishcard-2{
+    position: fixed;
+    top: 150px;
+    left: 440px;
+}
+
+#wishcard-3{
+    position: fixed;
+    top: 150px;
+    left: 550px;
+}
+
+#wishcard-4{
+    position: fixed;
+    top: 150px;
+    left: 660px;
+}
+
+#wishcard-5{
+    position: fixed;
+    top: 150px;
+    left: 770px;
+}
+
+#wishcard-6{
+    position: fixed;
+    top: 150px;
+    left: 880px;
+}
+
+#wishcard-7{
+    position: fixed;
+    top: 150px;
+    left: 990px;
+}
+
+#wishcard-8{
+    position: fixed;
+    top: 150px;
+    left: 1100px;
+}
+
+#wishcard-9{
+    position: fixed;
+    top: 150px;
+    left: 1210px;
+}

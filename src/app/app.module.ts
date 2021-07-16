@@ -3,16 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WishpageComponent } from './wishpage/wishpage.component';
-import { WishboardComponent } from './wishpage/wishboard/wishboard.component';
-import { Wishx10Component } from './wishpage/wishx10/wishx10.component';
+import { WishboardComponent } from './wishboard/wishboard.component';
+import { Wishx10Component } from './wishx10/wishx10.component';
+import { WishcardComponent } from './wishcard/wishcard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WishpageComponent,
     WishboardComponent,
-    Wishx10Component
+    Wishx10Component,
+    WishcardComponent
   ],
   imports: [
     BrowserModule,

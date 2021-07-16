@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WishpageComponent } from './wishpage.component';
+import { WishcardComponent } from './wishcard.component';
 
-describe('WishpageComponent', () => {
-  let component: WishpageComponent;
-  let fixture: ComponentFixture<WishpageComponent>;
+describe('WishcardComponent', () => {
+  let component: WishcardComponent;
+  let fixture: ComponentFixture<WishcardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WishpageComponent ]
+      declarations: [ WishcardComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WishpageComponent);
+    fixture = TestBed.createComponent(WishcardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

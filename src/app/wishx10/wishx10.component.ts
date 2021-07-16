@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Wish } from '../models/Wish';
+import { ItemService } from '../wishcard/item.service';
 import { WishcardComponent } from '../wishcard/wishcard.component';
 
 @Component({
@@ -18,17 +18,16 @@ import { WishcardComponent } from '../wishcard/wishcard.component';
 })
 export class Wishx10Component implements OnInit {
 
-  wish: Wish;
   wishcard: WishcardComponent;
+  itemService: ItemService;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.wishcard = new WishcardComponent();
+    this.wishcard = new WishcardComponent(this.itemService);
   }
 
   wishx10(): void{
-    console.log("rollx10!")
     var video = <HTMLVideoElement>document.getElementById("wishx10-4-video");
     var audio = <HTMLAudioElement>document.getElementById("wishx10-audio");
     audio.play();
@@ -60,6 +59,8 @@ export class Wishx10Component implements OnInit {
     wishShowBackground.style.display = "block"
     var backToMain = document.getElementById("back-to-main-button");
     backToMain.style.display = "block"
+    // this.wishcard.hideOrDisplay();
+    // this.wishcard.skip();
     WishcardComponent.hideOrDisplay();
     WishcardComponent.skip();
 
@@ -70,6 +71,7 @@ export class Wishx10Component implements OnInit {
     wishShowBackground.style.display = "none";
     var backToMain = document.getElementById("back-to-main-button");
     backToMain.style.display = "none"
+    // this.wishcard.hideOrDisplay();
     WishcardComponent.hideOrDisplay();
   }
 

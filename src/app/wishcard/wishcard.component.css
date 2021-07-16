@@ -7,6 +7,23 @@
     display: block;
 }
 
+.wishcard-container {
+    width: 100px;
+    height: 400px;
+}
+
+.wishcard-container .name{
+    position: absolute;
+    margin: 5px 10px;
+    bottom: 20px;
+}
+
+.wishcard-container .rating{
+    position: absolute;
+    margin: 5px 10px;
+    bottom: 0;
+}
+
 @keyframes slideInFromLeft {
     0% {
       transform: translateX(100%);

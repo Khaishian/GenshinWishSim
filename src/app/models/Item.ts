@@ -1,4 +1,4 @@
-export class Wish {
+export interface Item {
     name: string;
     rating: number;
   }
